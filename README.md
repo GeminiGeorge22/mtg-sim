@@ -1,5 +1,8 @@
 # MTG Sim
 
+[![mtg-sim MCP server – quality and maintenance score on Glama](https://glama.ai/mcp/servers/GeminiGeorge22/mtg-sim/badges/score.svg)](https://glama.ai/mcp/servers/GeminiGeorge22/mtg-sim)
+[![mtg-sim MCP connector](https://glama.ai/mcp/connectors/io.github.GeminiGeorge22/mtg-sim/badges/score.svg)](https://glama.ai/mcp/connectors/io.github.GeminiGeorge22/mtg-sim)
+
 MTG Sim is a **Magic: The Gathering simulator** (a Magic sim / goldfish simulator) you add to Claude, ChatGPT, Cursor, or VS Code. Paste a decklist and ask: is this legal in Commander or Modern? What's the mana curve? How often do I mulligan? What are my odds of Bolt plus two lands by turn 2? Goldfish this list and tell me when I miss my third land.
 
 Operated by **FMF Tools**.
