@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "mtg-sim": {
+      "type": "http",
+      "url": "https://mtg-sim.fmf-x402.workers.dev/mcp"
+    }
+  }
+}

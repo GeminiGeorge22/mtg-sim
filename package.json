@@ -1,0 +1,20 @@
+{
+  "name": "mtg-sim",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "MTG Sim: a Magic: The Gathering simulator (goldfish, mulligan, draw odds) as an MCP server.",
+  "homepage": "https://mtg-sim.fmf-x402.workers.dev/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeminiGeorge22/mtg-sim.git"
+  },
+  "scripts": {
+    "test": "node test/unit.mjs"
+  },
+  "dependencies": {
+    "mppx": "^0.21.4",
+    "viem": "^2.58.6"
+  }
+}

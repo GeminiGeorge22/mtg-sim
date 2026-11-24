@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.GeminiGeorge22/mtg-sim",
+  "title": "MTG Sim",
+  "description": "Magic: The Gathering simulator: goldfish, mulligan & draw sims, free Commander/EDH deck check.",
+  "version": "1.0.0",
+  "websiteUrl": "https://mtg-sim.fmf-x402.workers.dev/",
+  "repository": {
+    "url": "https://github.com/GeminiGeorge22/mtg-sim",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mtg-sim.fmf-x402.workers.dev/mcp"
+    }
+  ]
+}

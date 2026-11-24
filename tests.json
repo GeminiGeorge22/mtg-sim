@@ -1,0 +1,110 @@
+[
+ {
+  "name": "draw_odds",
+  "path": "/mpp/mtg/draw-odds",
+  "body": {
+   "format": "mtg",
+   "cards": [
+    {
+     "name": "Lightning Bolt",
+     "copies": 4,
+     "min": 1
+    },
+    {
+     "name": "lands",
+     "copies": 20,
+     "min": 2
+    }
+   ],
+   "turn": 3
+  }
+ },
+ {
+  "name": "draw_odds_commander",
+  "path": "/mpp/mtg/draw-odds",
+  "body": {
+   "format": "commander",
+   "cards": [
+    {
+     "name": "Sol Ring",
+     "copies": 1
+    }
+   ],
+   "turn": 5,
+   "on_play": false
+  }
+ },
+ {
+  "name": "land_count",
+  "path": "/mpp/mtg/land-count",
+  "body": {
+   "format": "mtg",
+   "lands": 24,
+   "curve_top": 4,
+   "colors": [
+    {
+     "color": "R",
+     "pips": 2,
+     "turn": 2
+    }
+   ]
+  }
+ },
+ {
+  "name": "goldfish",
+  "path": "/mpp/mtg/goldfish",
+  "body": {
+   "decklist": "4 Goblin Guide\n4 Monastery Swiftspear\n4 Lightning Bolt\n4 Lava Spike\n4 Rift Bolt\n4 Skewer the Critics\n4 Light Up the Stage\n4 Eidolon of the Great Revel\n4 Searing Blaze\n4 Skullcrack\n20 Mountain",
+   "tags": {
+    "creature": [
+     "Goblin Guide",
+     "Monastery Swiftspear",
+     "Eidolon of the Great Revel"
+    ]
+   },
+   "goals": [
+    {
+     "name": "T1 Guide",
+     "turn": 1,
+     "need": [
+      {
+       "card": "Goblin Guide"
+      }
+     ]
+    }
+   ],
+   "turns": 4,
+   "iterations": 5000,
+   "seed": 7
+  }
+ },
+ {
+  "name": "bad_cards",
+  "path": "/mpp/mtg/draw-odds",
+  "body": {
+   "cards": [
+    {
+     "name": "x",
+     "copies": 99
+    }
+   ]
+  },
+  "expect": 402
+ },
+ {
+  "name": "bad_goldfish_nolands",
+  "path": "/mpp/mtg/goldfish",
+  "body": {
+   "decklist": "4 Goblin Guide\n56 Lightning Bolt"
+  },
+  "expect": 402
+ },
+ {
+  "name": "bad_land_prob",
+  "path": "/mpp/mtg/land-count",
+  "body": {
+   "probability": 0
+  },
+  "expect": 402
+ }
+]

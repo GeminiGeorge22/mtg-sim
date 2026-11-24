@@ -1,0 +1,12 @@
+node_modules/
+.wrangler/
+.dev.vars
+.dev.vars.*
+.env
+.env.*
+.mppkey
+.mppkey_*
+*.pem
+raw/
+.DS_Store
+coverage/

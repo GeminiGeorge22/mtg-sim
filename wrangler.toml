@@ -1,0 +1,27 @@
+name = "mtg-sim"
+main = "worker.mjs"
+compatibility_date = "2026-11-01"
+compatibility_flags = ["nodejs_compat"]
+workers_dev = true
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+[[durable_objects.bindings]]
+name = "MPPX_STORE"
+class_name = "MppxStore"
+
+[[durable_objects.bindings]]
+name = "BUDGET"
+class_name = "Budget"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["MppxStore", "Budget"]
+
+[env.testnet]
+name = "mtg-sim-testnet"
+vars = { MPP_TESTNET = "1" }
+assets = { directory = "./public", binding = "ASSETS" }
+durable_objects.bindings = [ { name = "MPPX_STORE", class_name = "MppxStore" }, { name = "BUDGET", class_name = "Budget" } ]
